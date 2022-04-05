@@ -16,7 +16,7 @@ const defaultOnDismiss = () => null
 const SettingsModal = ({ onDismiss = defaultOnDismiss, translateString }: SettingsModalProps) => {
   const intl = useIntl()
   return (
-    <Modal title={intl('swap.settings', 'Settings')} onDismiss={onDismiss}>
+    <Modal title={intl('swap.settings', 'Settings')} onDismiss={onDismiss} bodyPadding='0 24px 24px'>
       <SlippageToleranceSetting translateString={translateString} />
       <TransactionDeadlineSetting translateString={translateString} />
       {/* <AudioSetting translateString={translateString} /> */}

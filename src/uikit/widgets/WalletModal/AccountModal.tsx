@@ -16,16 +16,16 @@ interface Props {
 
 export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '66')
 const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
-  <Modal title="Your wallet" onDismiss={onDismiss}>
+  <Modal title="Your wallet" onDismiss={onDismiss} bodyPadding='0 24px 24px'>
     <Text
-      fontSize="20px"
+      fontSize="16px"
       bold
       color='#4238C3'
       style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" }}
     >
       {account}
     </Text>
-    <Flex mb="32px">
+    <Flex mb="50px">
       <LinkExternal small href={`https://blockscout.com${ NETWORK_CHAIN_ID === 66 ? '' : '/okexchain-test'}/address/${account}`} mr="16px">
         View on okLink
       </LinkExternal>
@@ -35,6 +35,8 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       <Button
         scale="sm"
         variant="secondary"
+        height='38px'
+        style={{borderRadius: '20px'}}
         onClick={() => {
           logout();
           window.localStorage.removeItem(connectorLocalStorageKey);

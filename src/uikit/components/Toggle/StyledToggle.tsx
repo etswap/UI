@@ -28,7 +28,7 @@ const getScale = (property: ScaleKeys) => ({ scale = scales.MD }: ToggleProps) =
 };
 
 export const Handle = styled.div<HandleProps>`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme, checked }) => checked? '#fff' : theme.colors.primary};
   border-radius: 50%;
   cursor: pointer;
   height: ${getScale("handleHeight")};
@@ -55,7 +55,7 @@ export const Input = styled.input<InputProps>`
 
 const StyledToggle = styled.div<ToggleProps>`
   align-items: center;
-  background-color: ${({ theme, checked }) => checked ? 'rgba(253, 159, 9, 0.3)' : theme.colors.toggleDefBg};
+  background-color: ${({ theme, checked }) => checked ? '#018C5C' : theme.colors.toggleDefBg};
   border-radius: 24px;
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
