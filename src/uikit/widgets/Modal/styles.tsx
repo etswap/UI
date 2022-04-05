@@ -22,9 +22,9 @@ export const ModalBody = styled(Flex)`
   flex-direction: column;
 `;
 
-export const ModalCloseButton: React.FC<{ onDismiss: ModalProps["onDismiss"] }> = ({ onDismiss }) => {
+export const ModalCloseButton: React.FC<{ onDismiss: ModalProps["onDismiss"], style: any }> = ({ onDismiss, style }) => {
   return (
-    <IconButton variant="text" onClick={onDismiss} aria-label="Close the dialog">
+    <IconButton variant="text" onClick={onDismiss} aria-label="Close the dialog" style={style}>
       <CloseIcon color="closeIconColor" />
     </IconButton>
   );

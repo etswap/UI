@@ -28,16 +28,16 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    // href: '/farms',
-    href: '#',
-    comming: true
+    href: '/farms',
+    // href: '#',
+    // comming: true
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    // href: '/pools',
-    href: '#',
-    comming: true
+    href: '/pools',
+    // href: '#',
+    // comming: true
   },
 
   {
@@ -82,7 +82,7 @@ const config: MenuEntry[] = [
     items:[
       {
         label: 'Github',
-        href: 'https://github.com/MangoswapDefi/mangoswap', 
+        href: 'https://github.com/MangoswapDefi/mangoswap',
         target: '_blank'
       },
       {
@@ -111,7 +111,7 @@ const config: MenuEntry[] = [
       //   target: '_blank'
       // }
     ]
-  } 
+  }
 ]
 
 export default config

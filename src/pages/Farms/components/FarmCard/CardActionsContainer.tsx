@@ -78,6 +78,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
       <Button
         mt="8px"
         width="100%"
+        height='38px'
         disabled={requestedApproval || location.pathname.includes('archived')}
         onClick={handleApprove}
         variant='gradual'

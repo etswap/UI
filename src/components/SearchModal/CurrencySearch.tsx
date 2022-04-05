@@ -145,7 +145,7 @@ export function CurrencySearch({
     <Column style={{ width: '100%', flex: '1 1' }}>
       <PaddedColumn gap="14px">
         <RowBetween>
-          <Text>
+          <Text color='#4238C3' fontWeight='bold'>
             {intl('swap.selectToken')}
             <QuestionHelper
               text={intl('swap.selectTokenHint')}
@@ -166,7 +166,7 @@ export function CurrencySearch({
           <CommonBases chainId={chainId} onSelect={handleCurrencySelect} selectedCurrency={selectedCurrency} />
         )}
         <RowBetween>
-          <Text fontSize="14px">{intl('swap.tokenName')}</Text>
+          <Text fontSize="14px" color='#4238C3'>{intl('swap.tokenName')}</Text>
           <SortButton ascending={invertSearchOrder} toggleSortOrder={() => setInvertSearchOrder((iso) => !iso)} />
         </RowBetween>
       </PaddedColumn>

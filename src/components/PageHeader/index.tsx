@@ -31,22 +31,22 @@ const PageHeader = ({ title, description, children }: PageHeaderProps) => {
     <StyledPageHeader>
       <Flex alignItems="center">
         <Details>
-          <Heading mb="8px" fontSize="22px" style={{fontWeight: 900}} >{title}</Heading>
+          <Heading mb="8px" fontSize="22px" style={{fontWeight: 900, color: "#4238C3"}} >{title}</Heading>
           {description && (
-            <Text color="rgba(189, 189, 189, 1)" fontSize="14px">
+            <Text color="#676397" fontSize="14px">
               {description}
             </Text>
           )}
         </Details>
         <IconButton variant="text" onClick={onPresentSettings} title={intl('swap.settings', 'Settings')}>
-          <TuneIcon width="24px" color="#828282" />
+          <TuneIcon width="24px" color="#4238C3" />
         </IconButton>
         <IconButton
           variant="text"
           onClick={onPresentRecentTransactions}
           title={intl('swap.recentTransactions', 'Recent transactions')}
         >
-          <HistoryIcon width="24px" color="#828282" />
+          <HistoryIcon width="24px" color="#4238C3" />
         </IconButton>
       </Flex>
       {children && <Text mt="16px">{children}</Text>}

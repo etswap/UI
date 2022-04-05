@@ -235,7 +235,7 @@ export default function PoolsCard({
               <div>
                 {!hasApprove ? (
                   <AutoRow justify="center">
-                    <Button isLoading={approveLoading} onClick={onApprove}>
+                    <Button isLoading={approveLoading} onClick={onApprove} height='38px' style={{minWidth: '160px'}}>
                       {intl('swap.approve')}
                     </Button>
                   </AutoRow>

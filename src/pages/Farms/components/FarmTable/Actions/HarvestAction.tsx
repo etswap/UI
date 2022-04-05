@@ -67,6 +67,7 @@ const HarvestAction: React.FunctionComponent<HarvestActionProps> = ({ pid, userD
             setPendingTx(false)
           }}
           ml="4px"
+          height='38px'
           style={{ color: '#fff' }}
         >
           {intl('farms.harvest')}

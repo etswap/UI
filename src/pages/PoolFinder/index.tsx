@@ -98,7 +98,7 @@ export default function PoolFinder() {
               startIcon={currency0 ? <CurrencyLogo currency={currency0} style={{ marginRight: '.5rem' }} /> : null}
               endIcon={<ChevronDownIcon style={{marginLeft: 'auto'}} width="24px" color="white" />}
               width="100%"
-              style={{justifyContent: 'flex-start'}}
+              style={{justifyContent: 'flex-start', boxShadow: '0 2px 0 0px #004D33'}}
             >
               {currency0 ? currency0.symbol : intl('find.selectToken')}
             </Button>
@@ -115,7 +115,7 @@ export default function PoolFinder() {
               startIcon={currency1 ? <CurrencyLogo currency={currency1} style={{ marginRight: '.5rem' }} /> : null}
               endIcon={<ChevronDownIcon style={{marginLeft: 'auto'}} width="24px" color="white" />}
               width="100%"
-              style={{justifyContent: 'flex-start'}}
+              style={{justifyContent: 'flex-start', boxShadow: '0 2px 0 0px #004D33'}}
             >
               {currency1 ? currency1.symbol : intl('find.selectToken')}
             </Button>

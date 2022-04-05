@@ -126,7 +126,7 @@ const SORT_FIELD = {
 
 // @TODO rework into virtualized list
 function TopTokenList ({ tokens, itemMax = 10 }) {
-  
+
   const intl = useIntl()
   // page state
   const [page, setPage] = useState(1)

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const StyledButtonMenu = styled.div`
-  background-color: #fff;
+  background-color: #E8ECF0;
   border-radius: 16px;
   display: inline-flex;
   align-items: center;
-  padding: 2px 4px;
+  padding: 0px;
   box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.1);
   & > button + button,
   & > a + a {

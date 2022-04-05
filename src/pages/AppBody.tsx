@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
 export const BodyWrapper = styled(Card)`
   position: relative;
   max-width: 350px;
+  border-radius: 40px;
   ${({ theme }) => theme.mediaQueries.sm} {
     max-width: 436px;
   }

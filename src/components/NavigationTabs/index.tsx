@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as HistoryLink } from 'react-router-dom'
-import { ArrowLeft } from 'react-feather'
+import { ArrowLeft, ChevronLeft } from 'react-feather'
 import { RowBetween } from 'components/Row'
 import QuestionHelper from 'components/QuestionHelper'
 import useI18n from 'hooks/useI18n'
@@ -16,11 +16,12 @@ const Tabs = styled.div`
 `
 
 const ActiveText = styled.div`
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
+  color: #4238C3;
 `
 
-const StyledArrowLeft = styled(ArrowLeft)`
+const StyledArrowLeft = styled(ChevronLeft)`
   color: ${({ theme }) => theme.colors.text};
 `
 

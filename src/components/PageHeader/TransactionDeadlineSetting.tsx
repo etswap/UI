@@ -47,14 +47,14 @@ const TransactionDeadlineSetting = ({ translateString }: TransactionDeadlineSett
   return (
     <Box mb="16px">
       <Flex alignItems="center" mb="8px">
-        <Text bold>{intl('swap.transactionDeadline')}</Text>
+        <Text bold color='#4238C3'>{intl('swap.transactionDeadline')}</Text>
         <QuestionHelper
           text={intl('swap.transactionDeadlineHint')}
         />
       </Flex>
       <Field>
-        <Input type="number" step="1" min="1" value={value} onChange={handleChange} style={{backgroundColor: '#F2F2F2', height: '38px'}} />
-        <Text fontSize="14px" ml="8px">
+        <Input type="number" step="1" min="1" value={value} onChange={handleChange} style={{backgroundColor: '#F2F2F2', height: '38px', color: "#018C5C", borderRadius: "20px"}} />
+        <Text fontSize="14px" ml="8px" color="#018C5C">
           {intl('swap.minutes')}
         </Text>
       </Field>

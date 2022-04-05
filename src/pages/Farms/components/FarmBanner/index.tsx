@@ -43,16 +43,17 @@ interface FarmBannerProps {
 const FarmBanner: React.FC<FarmBannerProps> = ({ title, describe }) => {
   const isMobile = useIsMobile()
   const bannerStyle: any = isMobile ? {
-    background: "url('/images/farms/farmBannerMobile.svg') no-repeat", 
+    background: "url('/images/farms/farmBanner.png') no-repeat",
     backgroundSize: '60%',
     backgroundPosition: 'right',
     padding: '24px'
-  } : 
+  } :
     {
-      background: "url('/images/farms/farmBanner.svg') no-repeat", 
-      backgroundPosition: 'right'
+      background: "url('/images/farms/farmBanner.png') no-repeat",
+      backgroundSize: '45%',
+      backgroundPosition: 'bottom right'
     }
-  
+
 
   return (
     <PoolsBannerBox style={bannerStyle}>

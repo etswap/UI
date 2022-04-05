@@ -59,7 +59,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
 
   return (
     <Flex>
-      {isMobile && <MenuButton aria-label="Toggle menu" onClick={togglePush}>
+      {(isMobile || true) && <MenuButton aria-label="Toggle menu" onClick={togglePush}>
         {isPushed ? (
           <HamburgerCloseIcon width="24px" color="textSubtle" />
         ) : (

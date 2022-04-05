@@ -6,6 +6,7 @@ import Button from '../../../components/Button/Button'
 import * as IconModule from '../icons'
 import { LangType } from '../types'
 import MenuButton from './MenuButton'
+import DownArrow from './DownArrow'
 
 const Icons = IconModule as unknown as { [key: string]: React.FC<SvgProps> }
 const { LanguageIcon } = Icons
@@ -24,8 +25,10 @@ const LangSelector: React.FC<Props> = ({ currentLang, langs, setLang }) => {
     <Dropdown
       position="bottom-left"
       target={
-        <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="24px" />}>
-          <Text color="textSubtle">{langs.filter((lang) => lang.code === currentLang)[0]?.language || 'UNKNOW'}</Text>
+        <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="24px" />} endIcon={<DownArrow />}>
+          <Text color="textSubtle">{langs.filter((lang) => lang.code === currentLang)[0]?.language || 'UNKNOW'}
+
+          </Text>
         </Button>
       }
     >

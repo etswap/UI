@@ -12,7 +12,8 @@ const UnlockButton: React.FC<ButtonProps> = (props) => {
   const { onPresentConnectModal } = useWalletModal(login, logout)
 
   return (
-    <Button variant="primary" onClick={onPresentConnectModal} {...props} style={{ background: baseColors.linearGradientPrimary, boxShadow: 'none'}}>
+    <Button variant="primary" height='38px' onClick={onPresentConnectModal} {...props}
+            style={{ background: baseColors.linearGradientPrimary, boxShadow: '0 3px 0px 0 #005035'}}>
       {intl('swap.unlockWallet', 'Unlock Wallet')}
     </Button>
   )

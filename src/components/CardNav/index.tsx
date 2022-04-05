@@ -31,25 +31,27 @@ export default Nav
 const StyledNav = styled.div`
   margin-bottom: 40px;
   margin-top: 0px;
-  background: #FFEDCF;
-  border: 1px solid #FFDA9E;
+  background: #E8ECF0;
+  border: none;
   box-sizing: border-box;
-  border-radius: 6px;
-  padding: 5px 10px;
+  border-radius: 22px;
+  padding: 0px;
 
   a{
-    color: #000000;
+    color: #676397;
     font-size: 16px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     position: relative;
+    width: 85px;
     &:nth-child(2){
-      margin-left: 27px;
+      //margin-left: 27px;
     }
   }
   .active{
     color: #FFFFFF; 
-    border-radius: 6px;
+    border-radius: 16px;
+    background-color: #676397 ;
   }
 `

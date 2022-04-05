@@ -39,7 +39,7 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
           await onReward()
           setPendingTx(false)
         }}
-        style={{color: '#fff'}}
+        style={{color: '#fff', height: '36px', borderRadius: '4px'}}
       >
         {intl('farms.harvest')}
       </Button>

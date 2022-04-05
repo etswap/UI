@@ -23,14 +23,14 @@ const HelpLink = styled(Link)`
 const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => {
   const intl = useIntl()
   return (
-    <Modal title={intl('swap.connectWallet')} onDismiss={onDismiss}>
+    <Modal title={intl('swap.connectWallet')} onDismiss={onDismiss} bodyPadding='0px 24px 24px' xstyle={{marginRight: '-20px'}}>
       {config.map((entry, index) => (
         <WalletCard
           key={entry.title}
           login={login}
           walletConfig={entry}
           onDismiss={onDismiss}
-          mb={index < config.length - 1 ? "8px" : "0"}
+          mb={index < config.length - 1 ? "24px" : "0"}
         />
       ))}
       {/* <HelpLink

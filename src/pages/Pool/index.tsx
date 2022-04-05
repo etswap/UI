@@ -67,18 +67,19 @@ export default function PoolFinderPool() {
           title={intl('pool.liquidity')}
           description={intl('pool.addLiquidityHint')}
         >
-          <Button style={{ backgroundColor: '#FD9F09', boxShadow: 'none'}} id="join-pool-button" mb="16px"  as={Link} to="/add">
+          <Button style={{ backgroundColor: '#018C5C', boxShadow: '0px 2px 0px 0px #005035', fontSize: '14px', height: '40px'}} id="join-pool-button" mb="16px"  as={Link} to="/add">
             {intl('pool.addLiquidity')}
           </Button>
         </PageHeader>
-        <AutoColumn gap="lg" justify="center">
+        <AutoColumn gap="lg" justify="space-between">
 
-          <Zoom zoom={0.9}>
-          <CardBody>
+          <Zoom zoom={1}>
+
+            <CardBody>
             <AutoColumn gap="12px" style={{ width: '100%' }}>
               <RowBetween padding="0 11px 0 0">
-                <Text color={theme.colors.text}>{intl('pool.yourLiquidity')}</Text>
-                <Question 
+                <Text color='#4238C3' style={{ fontSize: '16px', fontWeight: 'bold'}}>{intl('pool.yourLiquidity')}</Text>
+                <Question
                   text={intl('pool.yourLiquidityHint')}
                 />
               </RowBetween>
@@ -112,17 +113,17 @@ export default function PoolFinderPool() {
               <div>
                 <Text fontSize="14px" style={{ padding: '.5rem 0 .5rem 0' }}>
                   {intl('pool.notSeePool')}{' '}
-                  <StyledInternalLink id="import-pool-link" to="/find">
+                  <StyledInternalLink id="import-pool-link" to="/find" style={{color:"#676397"}}>
                     {intl('pool.importIt')}
                   </StyledInternalLink>
                 </Text>
-                <Text fontSize="14px" style={{ padding: '.5rem 0 .5rem 0', opacity: 0, height: '0px' }}>
+                <Text fontSize="14px" style={{ padding: '.5rem 0 .5rem 0', opacity: 0, height: '0px', display: 'none' }}>
                   {intl('pool.unstakeTokensHint')}
                 </Text>
               </div>
             </AutoColumn>
             </CardBody>
-            </Zoom>
+          </Zoom>
         </AutoColumn>
       </AppBody>
     </Container>

@@ -97,7 +97,7 @@ const Menu: React.FC<NavProps> = ({
       setIsPushed(false)
     }
   }, [isMobile])
-  const location = useLocation()  
+  const location = useLocation()
   useEffect(() => {
     const handleScroll = () => {
       const currentOffset = window.pageYOffset

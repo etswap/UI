@@ -78,7 +78,7 @@ const SlippageToleranceSettings = ({ translateString }: SlippageToleranceSetting
   return (
     <Box mb="16px">
       <Flex alignItems="center" mb="8px">
-        <Text bold>{intl('swap.slippageTolerance', 'Slippage tolerance')}</Text>
+        <Text bold color="#4238C3">{intl('swap.slippageTolerance', 'Slippage tolerance')}</Text>
         <QuestionHelper
           text={intl(
             'swap.slippageHint',
@@ -93,7 +93,7 @@ const SlippageToleranceSettings = ({ translateString }: SlippageToleranceSetting
 
             return (
               <Option key={predefinedValue}>
-                <Button variant={value === predefinedValue ? 'primary' : 'tertiary'} onClick={handleClick} style={{height: '38px'}}>
+                <Button variant={value === predefinedValue ? 'primary' : 'tertiary'} onClick={handleClick} style={{height: '38px',  borderRadius: "20px", fontWeight: 'normal'}}>
                   {label}
                 </Button>
               </Option>
@@ -111,11 +111,11 @@ const SlippageToleranceSettings = ({ translateString }: SlippageToleranceSetting
               value={value}
               onChange={handleChange}
               isWarning={error !== null}
-              style={{backgroundColor: '#F2F2F2', height: '38px'}}
+              style={{backgroundColor: '#F2F2F2', height: '38px', color: '#018C5C',  borderRadius: "20px"}}
             />
           </Option>
           <Option>
-            <Text fontSize="18px">%</Text>
+            <Text fontSize="18px" color="#018C5C">%</Text>
           </Option>
         </Flex>
       </Options>

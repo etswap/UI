@@ -119,7 +119,7 @@ export default function CurrencyInputPanel({
         {!hideInput && (
           <LabelRow>
             <RowBetween>
-              <Text fontSize="14px">{translatedLabel}</Text>
+              <Text fontSize="14px" color='#4238C3' fontWeight='bold'>{translatedLabel}</Text>
               {account && (
                 <Text onClick={onMax} fontSize="14px" style={{ display: 'inline', cursor: 'pointer' }}>
                   {!hideBalance && !!currency && selectedCurrencyBalance
@@ -130,12 +130,13 @@ export default function CurrencyInputPanel({
             </RowBetween>
           </LabelRow>
         )}
-        <InputRow style={hideInput ? { padding: '0', borderRadius: '8px' } : {}} selected={disableCurrencySelect}>
+        <InputRow style={hideInput ? { padding: '0', borderRadius: '8px'} : {}} selected={disableCurrencySelect}>
           {!hideInput && (
             <>
               <NumericalInput
                 className="token-amount-input"
                 value={value}
+                style={{color: "#676397", fontWeight: 'bold', fontSize: '20px'}}
                 onUserInput={(val) => {
                   onUserInput(val)
                 }}
@@ -167,7 +168,7 @@ export default function CurrencyInputPanel({
                   {pair?.token0.symbol}:{pair?.token1.symbol}
                 </Text>
               ) : (
-                <Text id="pair">
+                <Text id="pair" color='#4238C3' style={{fontWeight: 'bold'}} >
                   {(currency && currency.symbol && currency.symbol.length > 20
                     ? `${currency.symbol.slice(0, 4)}...${currency.symbol.slice(
                         currency.symbol.length - 5,

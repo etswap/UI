@@ -3,12 +3,12 @@ import { Colors } from './types'
 export const baseColors = {
   title: '#333',
   failure: '#FF3C88',
-  primary: '#FD9E08',
-  linearGradientPrimary: '#FD9E08',
+  primary: '#018C5C', // '#FD9E08',
+  linearGradientPrimary: '#018C5C',// '#FD9E08',
   primaryBright: '#53DEE9',
   primaryDark: '#0098A1',
   secondary: '#7645D9',
-  success: '#FD9E08',
+  success: '#018C5C', // '#FD9E08',
   warning: '#FFB237',
   inputBackground: 'rgba(242, 242, 242, 1)',
   title2: 'rgb(130 130 130)',
@@ -20,7 +20,7 @@ export const baseColors = {
   closeIconColor: '#4F4F4F',
   cardNav: '#FFEDCF',
   greenColor: '#27AE60',
-  orangeColor: '#FFF1DB',
+  orangeColor: '#EAEFF4',  // '#FFF1DB',
 }
 
 export const brandColors = {
@@ -28,7 +28,7 @@ export const brandColors = {
 }
 export const buttonColors = {
   linearGradientPrimary: baseColors.linearGradientPrimary,
-  linearGradientActivePrimary: '#FD9E08',
+  linearGradientActivePrimary: '#018C5C', // '#FD9E08',
 }
 
 export const lightColors: Colors = {

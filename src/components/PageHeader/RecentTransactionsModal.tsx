@@ -43,23 +43,23 @@ const RecentTransactionsModal = ({ onDismiss = defaultOnDismiss, translateString
   }, [allTransactions])
 
   return (
-    <Modal title={intl('swap.recentTransactions', 'Recent transactions')} onDismiss={onDismiss}>
+    <Modal title={intl('swap.recentTransactions', 'Recent transactions')} onDismiss={onDismiss} bodyPadding="0 24px 24px">
       {!account && (
         <Flex justifyContent="center" flexDirection="column" alignItems="center">
-          <Text mb="20px" bold>
+          <Text mb="60px" bold color="#4238C3">
             {intl('swap.connectWalletInfo', 'Please connect your wallet to view your recent transactions')}
           </Text>
-          <Button variant="primary" scale="sm" onClick={onDismiss}>
+          <Button variant="primary" scale="sm" onClick={onDismiss} style={{height: '40px', borderRadius: '25px', padding: '0 25px'}}>
             {intl('global.close', 'Close')}
           </Button>
         </Flex>
       )}
       {account && chainId && sortedRecentTransactions.length === 0 && (
         <Flex justifyContent="center" flexDirection="column" alignItems="center">
-          <Text mb="20px" bold>
+          <Text mb="60px" bold color="#4238C3" style={{width: '100%'}}>
             {intl('pool.noTransactions', 'No recent transactions')}
           </Text>
-          <Button variant="primary" scale="sm" onClick={onDismiss}>
+          <Button variant="primary" scale="sm" onClick={onDismiss} style={{height: '40px', borderRadius: '20px', padding: '0 25px'}}>
             {intl('global.close', 'Close')}
           </Button>
         </Flex>

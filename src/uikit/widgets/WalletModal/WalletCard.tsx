@@ -15,6 +15,7 @@ interface Props {
 const WalletButton = styled(Button)`
   justify-content: space-between;
   transition: opacity 0.2s ease;
+  border-radius: 24px;
   &:hover {
     opacity: 0.8;
   }

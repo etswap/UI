@@ -78,7 +78,7 @@ const PanelFooter: React.FC<Props> = ({
           )}
         </MenuButton>}
         <OKTBalance currency={currency} currencyBalance={relevantTokenBalances} />
-        
+
       </SocialEntry>
     </Container>
   )

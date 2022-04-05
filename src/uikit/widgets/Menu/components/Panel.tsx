@@ -50,7 +50,7 @@ const Panel: React.FC<Props> = (props) => {
   return (
     <StyledPanel isMobile={isMobile} isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
-      <PanelFooter {...props} />
+      {false && <PanelFooter {...props} />}
     </StyledPanel>
   );
 };

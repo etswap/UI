@@ -1570,8 +1570,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@etcswap-libs/sdk@../sdk":
+"@etcswap-libs/sdk@1.0.0":
   version "1.0.0"
+  resolved "https://registry.npmmirror.com/@etcswap-libs/sdk/-/sdk-1.0.0.tgz#6a0a8a258e59f2c4db258d39eca557f120b8d6bd"
+  integrity sha512-9NziuOh5AXOJ7qTSRGe14d+ep+X5YBTwsphEMCJEi/s5ZPkjaffz+UiXqP0mswl5E3uuV/EUKdIxVYEVnDbzPw==
   dependencies:
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"

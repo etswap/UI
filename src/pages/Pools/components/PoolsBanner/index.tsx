@@ -70,9 +70,9 @@ interface PoolsBannerProps {
 
 const PoolsBanner: React.FC<PoolsBannerProps> = ({ title, describe }) => {
   const isMobile = useIsMobile();
-  const bannerStyle = isMobile ? 
-    {background: "url('/images/pools/poolBannerMobile.svg') no-repeat", backgroundSize: '50%',  backgroundPosition: 'right', padding: '0 24px 24px'}
-   : {background: "url('/images/pools/poolBanner.svg') no-repeat", backgroundPosition: 'right', padding: '40px 24px'}
+  const bannerStyle = isMobile ?
+    {background: "url('/images/farms/farmBanner.png') no-repeat", backgroundSize: '50%',  backgroundPosition: 'bottom right', padding: '0 24px 24px'}
+   : {background: "url('/images/farms/farmBanner.png') no-repeat", backgroundSize: '45%', backgroundPosition: 'bottom right', padding: '40px 24px'}
   return (
     <PoolsBannerBox style={bannerStyle}>
       <div>
